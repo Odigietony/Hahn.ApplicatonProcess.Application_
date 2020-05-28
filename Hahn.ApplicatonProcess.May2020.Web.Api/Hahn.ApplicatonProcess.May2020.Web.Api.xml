@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicatonProcess.May2020.Web.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController">
+            <summary>
+            The applicant api controller.
+            Handles the Post,Put,Get and Delete requests.
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.#ctor(Hahn.ApplicatonProcess.May2020.Application.Interfaces.IApplicantInterface)">
+            <summary>
+            Include the required services needed to execute requests.
+            </summary>
+            <param name="applicant"></param>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.Get">
+            <summary>
+            Get all applicants data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.Get(System.Int32)">
+            <summary>
+            Get the object by the given id
+            </summary>
+            <param name="applicantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.Post(Hahn.ApplicatonProcess.May2020.Domain.Dto.CreateApplicantDto)">
+            <summary>
+            Create a new applicant object
+            </summary>
+            <param name="applicantDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.Put(System.Int32,Hahn.ApplicatonProcess.May2020.Domain.Dto.UpdateApplicantDto)">
+            <summary>
+            To update the object with the given id
+            </summary>
+            <param name="applicantId">The Id of the record to be updated </param>
+            <param name="applicantDto">The body parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.May2020.Web.Api.Controllers.ApplicantController.Delete(System.Int32)">
+            <summary>
+            To delete the object with the given Id
+            </summary>
+            <param name="applicantId">The Id of the record to be deleted</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
